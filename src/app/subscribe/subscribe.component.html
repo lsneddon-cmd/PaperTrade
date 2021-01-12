@@ -1,0 +1,18 @@
+
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+
+  <div class="form-group input-group input-group-newsletter">
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Enter email..."
+      aria-label="Enter email..."
+      aria-describedby="submit-button"
+      ([ngModel])="subscriberEmail">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button" id="submit-button">Notify Me!</button>
+    </div>
+  </div>
+
+
+</form>
